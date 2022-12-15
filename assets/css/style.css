@@ -1,0 +1,98 @@
+/* span{
+    color: brown;
+    font-size: 3rem;
+    text-transform: uppercase;
+} */
+/* h2::first-letter,
+p::first-letter{
+    padding: 0 1rem;
+    color: brown;
+    font-size: 3rem;
+    text-transform: uppercase; */
+
+
+p::first-line{
+    color: green;
+    line-height: 3em;
+    text-shadow: 1px 1px 2px red;
+}
+
+::selection{
+    color: purple;
+    background-color: yellow;
+}
+
+img{
+    width: 60%;
+}
+
+.slider{
+    position: relative;
+}
+.slider::after,
+.slider::before{
+    content:url(./../icons/arrow-left-bold.svg);
+    display: block;
+    min-width: 15px;
+    width: 5%;
+    position: absolute;
+    top: 47.5%;
+}
+
+.slider::after{
+
+}
+
+.slider::before{
+
+}
+
+.heading{
+    width: 50vw;
+    background-color: pink;
+    margin: 0;
+
+    position: relative;
+
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.heading::after{
+    /* content: '\1F5A4';
+    display: block;
+    width: 25%;
+    margin: auto;
+    background-color: yellow;
+
+    position: absolute;
+    top: 0;
+    left: 0%;
+
+    color: red; 
+    font-size: 3em;    */
+    content: url(./../icons/arrow-collapse-all.svg);
+    display: inline-block;
+    width: 1rem;
+    background-color: fuchsia;
+}
+
+.heading::before{
+    content: '!';
+    display: inline-block;
+    width: 20%;
+    margin: auto;
+    background-color: yellow;
+    color: red;
+}
+
+/* .btn::after{
+    content: '!';
+    color: red;   
+}
+
+.btn::before{
+    content: '!';
+    color: red;   
+} */
+
